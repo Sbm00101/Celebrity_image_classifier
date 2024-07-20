@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818; /* Dark background */
+  color: #ffffff; /* Light text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #282828; /* Slightly lighter dark color for navbar */
+  border-bottom: 1px solid #3c3c3c; /* Border for separation */
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ff4081; /* Accent color */
+}
+
+/* Card Wrapper */
+.card-wrapper {
+  margin: 1% 0;
+  padding: 0 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #282828; /* Card background */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Prominent shadow */
+}
+
+/* Custom Circle Image */
+.custom-circle-image {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+.custom-circle-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Title */
+.card-title {
+  letter-spacing: 1.1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ff4081; /* Accent color */
+}
+
+/* Dropzone */
+.dropzone {
+  border-style: dashed;
+  border-color: #4a90e2; /* Bright, modern blue */
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #1e1e1e; /* Dark background for contrast */
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  min-height: 250px; /* Increased minimum height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For absolute positioning of image */
+}
+
+.dropzone:hover {
+  border-color: #50e3c2; /* Bright accent color on hover */
+  background-color: #2d2d2d; /* Slightly lighter background on hover */
+}
+
+.dropzone .dz-message {
+  font-family: 'Roboto', sans-serif;
+  color: #d0d0d0; /* Light text color for contrast */
+  text-align: center;
+}
+
+.dropzone img {
+  max-width: 90%; /* Increase size */
+  max-height: 90%; /* Maintain aspect ratio */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+}
+
+.dropzone .note {
+  font-family: 'Roboto', sans-serif;
+  color: #d0d0d0; /* Light text color for readability */
+  margin-top: 10px;
+}
+
+
+/* Error Message */
+#error .alert {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #cf6679; /* Accent color for error message */
+}
+
+/* Class Table */
+#classTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e0e0e0;
+}
+
+#classTable th, #classTable td {
+  border: 1px solid #3c3c3c; /* Border color to match the theme */
+  padding: 10px;
+  text-align: left;
+}
+
+#classTable th {
+  background-color: #383838; /* Darker header */
+}
+
+#classTable td {
+  background-color: #282828; /* Darker cells */
+}
+
+/* Button */
+.btn-success {
+  background-color: #ff4081; /* Accent color for button */
+  border-color: #ff4081;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #ff79a3; /* Lighter shade on hover */
+  border-color: #ff79a3;
+}
+
+/* Container Padding */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+  border-radius: 10px;
+}
+
+/* Make tables and cards responsive */
+@media (max-width: 768px) {
+  .card-wrapper {
+      margin: 5% 0;
+  }
+
+  .card-title {
+      font-size: 1rem;
+  }
+
+  #classTable th, #classTable td {
+      font-size: 0.9rem;
+  }
+}
