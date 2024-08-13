@@ -1,1 +1,0 @@
-# Celebrity_image_classifier
