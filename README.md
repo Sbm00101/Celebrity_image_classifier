@@ -3,8 +3,7 @@
 
 The Celebrity Image Classifier is a machine learning project designed to classify images of celebrities using facial recognition and machine learning techniques. This project leverages various computer vision libraries like OpenCV for face and eye detection, wavelet transform for image preprocessing, and machine learning models for classification. The model is trained to recognize images of specific celebrities, and the project is deployed as a web application using Flask, with a front-end built using HTML, CSS, and JavaScript.
 
-
-
+UI - ![Screenshot (103)](https://github.com/user-attachments/assets/aafc0f32-7063-44cf-b1f4-ad10208aea82)
 
 ## Features
 
